@@ -1,0 +1,60 @@
+.button.button-primary {
+    min-width: 75px;
+}
+
+button.m-loading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+}
+button.m-loading:after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    margin-left: -7px;
+    margin-top: -7px;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-left-color: #FFF;
+    border-top-color: #FFF;
+    animation: spin .6s infinite linear;
+}
+@keyframes spin {
+    to { transform: rotate(359deg) }
+}
+
+table.form-table td {
+    padding: 10px;
+}
+
+#udimi-menu-badge {
+  animation-duration: 10s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-name: notification-blink;
+}
+
+@keyframes notification-blink {
+  1%, 9% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  2%, 8% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  3%, 5%, 7% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  4%, 6% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
